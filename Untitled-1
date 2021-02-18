@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbtn{
+    margin-left: 250px;
+}
+#headref{
+    color: lightcyan;
+}
+#headref:hover{
+    color: white;
+}
+        #topnav {
+            box-shadow: 0px 0px 10px black;
+        }
+
+        #a {
+            background-image: url(<i class="fa fa-search"></i>);
+        }
+
+        #bgcard {
+            background-color: ghostwhite;
+        }
+
+        #myntra {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+
+        #darkdiv {
+            width: 500px;
+            height: 200px;
+            box-shadow: 0px 0px 10px 5px red;
+            margin: auto;
+            z-index: 4;
+        }
+
+        .chk-btn {
+            width: 60px;
+            height: 20px;
+            border-radius: 2px;
+            font-size: 9px;
+            padding-top: 5px;
+            text-align: center;
+            background-color: antiquewhite;
+            font-weight: bolder;
+        }
+
+        .chk2-btn {
+            width: 60px;
+            height: 20px;
+            border-radius: 2px;
+            font-size: 9px;
+            padding-top: 5px;
+            text-align: center;
+            background-color: springgreen;
+        }
+
+        #signupeye,
+        #logineye {
+            width: 45px;
+            height: 38px;
+            float: right;
+            margin-top: -38px;
+        }
+
+        #headref {
+            border-bottom: 2px solid darkgrey;
+        }
+
+        #headref:hover {
+            border-bottom: 2px solid red;
+            color: orangered;
+            opacity: .2s;
+
+        }
+
+        .cc {
+            float: left;
+        }
+
+        .map {
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+
+        #heading {
+            border: 2px dashed Blue;
+        }
+
+        .card {
+            box-shadow: 0px 0px 5px 0px black;
+        }
+
+        #pic {
+            width: 150px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 1px black;
+            margin-left: 2px;
+        }
+
+        #aboutcards {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        #cardimg {
+            border-radius: 10%;
+            padding: 10px;
+        }
+
+        #cardbody {
+            background-color: ghostwhite;
+        }
+
+        .theme-light {}
+
+        .theme-dark {}
+
+
+        /* toggle css */
+
+        .switch {
+            position: absolute;
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            transform: translate(-50%, -50%);
+            margin: auto;
+        }
+
+        /* Hide default HTML checkbox */
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        /* The slider */
+        .slider-me {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+
+        .slider-me:before {
+            position: absolute;
+            content: "";
+            height: 110%;
+            width: 60%;
+            left: 0px;
+            bottom: 4px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            box-shadow: 0 0px 15px #2020203d;
+            background: white url('https://i.ibb.co/FxzBYR9/night.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        input:checked+.slider-me {
+            background-color: #2196f3;
+        }
+
+        input:focus+.slider-me {
+            box-shadow: 0 0 1px #2196f3;
+        }
+
+        input:checked+.slider-me:before {
+            -webkit-transform: translateX(70%);
+            -ms-transform: translateX(70%);
+            transform: translateX(70%);
+            background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* Rounded sliders */
+        .slider-me.round {
+            border-radius: 30%;
+        }
+
+        .slider-me.round:before {
+            border-radius: 30%;
+        }
+
+        #toggler {
+            width: 50px;
+            height: 80px;
+        }

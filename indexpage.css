@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbtn {
+    margin-left: 250px;
+}
+
+/*
+#bodybg {
+    background-color: var(--bodycolor);
+}*/
+
+#headref {
+    color: var(--headlinks);
+    border-bottom: 2px solid var(--headbottom);
+}
+
+#headref:hover {
+    color: var(--headlinks);
+}
+
+#topnav {
+    box-shadow: 0px 0px 10px black;
+    background-color: var(--navbgcolor);
+    /*color: var(--navcolor);*/
+}
+
+#a {
+    background-image: url(<i class="fa fa-search"></i>);
+}
+
+#bgcard {
+    background-color: var(--profilecards);
+    width: 40%;
+    height: 300px;
+}
+
+h2 {
+    color: var(--headingcolor);
+}
+
+#myntra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+#darkdiv {
+    width: 500px;
+    height: 200px;
+    box-shadow: 0px 0px 10px 5px red;
+    margin: auto;
+    z-index: 4;
+}
+
+.chk-btn {
+    width: 60px;
+    height: 20px;
+    border-radius: 2px;
+    font-size: 9px;
+    padding-top: 5px;
+    text-align: center;
+    background-color: var(--passvalidbgcolorfalse);
+    color: var(--passvalidcolorfalse);
+}
+
+.chk2-btn {
+    width: 60px;
+    height: 20px;
+    border-radius: 2px;
+    font-size: 9px;
+    padding-top: 5px;
+    text-align: center;
+    background-color: var(--passvalidbgcolortrue);
+    color: var(--passvalidcolortrue);
+}
+
+#signupeye,
+#logineye {
+    width: 45px;
+    height: 38px;
+    float: right;
+    margin-top: -38px;
+}
+
+.cc {
+    float: left;
+}
+
+#map {
+    filter: invert(var(--a));
+}
+
+#mapbg {
+    background-color: var(--mapbg);
+}
+
+#heading {
+    border: 2px dashed Blue;
+}
+
+.card {
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+#pic {
+    border-radius: 20%;
+    box-shadow: 0px 0px 10px 1px var(--profileborder);
+    margin-left: 12px;
+}
+
+#aboutcards {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: var(--colorcontent);
+}
+
+#cardimg {
+    border-radius: 10%;
+    padding: 10px;
+
+}
+
+#profilecards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: var(--colorcontent);
+}
+
+#profileimgcard {
+    width: 30%;
+    border-radius: 2px solid red;
+}
+
+#cardbody {
+    background-color: var(--coloraboutcards);
+}
+
+#developers {
+    color: var(--headercolor);
+    font-family: 'Alegreya SC';
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px;
+}
+
+#services {
+    color: var(--headercolor);
+    font-family: 'Alegreya SC';
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px;
+}
+
+#reachus {
+    color: var(--headercolor);
+    font-family: 'Alegreya SC';
+    font-weight: bold;
+    text-shadow: 2px 2px 2px;
+    font-size: 40px;
+}
+
+#handles {
+    transition: ease all 0.2s;
+}
+
+#handles:hover {
+    transform: scale(1.1);
+    transition: ease all 0.2s;
+}
+
+#logincss {
+    color: var(--loginmodalcolor);
+    background-color: var(--loginmodalbgcolor);
+}
+
+#signupcss {
+    color: var(--signupmodalcolor);
+    background-color: var(--signupmodalbgcolor);
+}
+
+#forgotcss {
+    color: var(--forgotmodalcolor);
+    background-color: var(--forgotmodalbgcolor);
+}
+
+.theme-light {
+    --navbgcolor: #f7f7f7;
+    --headingcolor: #464646;
+    --headlinks: #464646;
+    --headbottom: #f7f7f7;
+    --a: 0%;
+    --mapbg: #f7f7f7;
+    --bodycolor: #f7f7f7;
+    --coloraboutcards: #f7f7f7;
+    --profilecards: ghostwhite;
+    --linksbottomcolor: red;
+    --headercolor: black;
+    --profileborder: grey;
+    --colorcontent: black;
+    --textcopyright: #292b2c;
+    --copyright: lightgrey;
+    --handlescolor: black;
+    --loginmodalcolor: black;
+    --loginmodalbgcolor: white;
+    --loginbtncolor: #0275d8;
+    --signupregistercolor: #0275d8;
+    --signupmodalcolor: black;
+    --signupmodalbgcolor: white;
+    --forgotmodalcolor: black;
+    --forgotmodalbgcolor: white;
+    --passvalidcolorfalse: black;
+    --passvalidbgcolorfalse: antiquewhite;
+    --passvalidcolortrue: black;
+    --passvalidbgcolortrue: springgreen;
+}
+
+.theme-dark {
+    --navbgcolor: #292b2c;
+    --headingcolor: #f7f7f7;
+    --headlinks: lightcyan;
+    --headbottom: #292b2c;
+    --a: 100%;
+    --mapbg: #292b2c;
+    --bodycolor: #242424;
+    --coloraboutcards: black;
+    --profilecards: black;
+    --linksbottomcolor: red;
+    --headercolor: white;
+    --profileborder: black;
+    --colorcontent: white;
+    --handlescolor: white;
+    --textcopyright: #f7f7f7;
+    --copyright: #242424;
+    --loginmodalcolor: white;
+    --loginmodalbgcolor: #292b2c;
+    --loginbtncolor: #7289da;
+    --signupregistercolor: #7289da;
+    --signupmodalcolor: white;
+    --signupmodalbgcolor: #292b2c;
+    --forgotmodalcolor: white;
+    --forgotmodalbgcolor: #292b2c;
+    --passvalidcolorfalse: white;
+    --passvalidbgcolorfalse: #5bc0de;
+    --passvalidcolortrue: white;
+    --passvalidbgcolortrue: #7289da;
+}
+
+.mapdiv {
+    width: 98%;
+    margin: auto;
+}
+
+/* toggle css */
+
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider-me {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider-me:before {
+    position: absolute;
+    content: "";
+    height: 110%;
+    width: 60%;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
+    background: white url('https://i.ibb.co/7JfqXxB/sunny.png ');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input:checked + .slider-me {
+    background-color: #2196f3;
+}
+
+input:focus + .slider-me {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider-me:before {
+    -webkit-transform: translateX(70%);
+    -ms-transform: translateX(70%);
+    transform: translateX(70%);
+    background: white url('https://i.ibb.co/FxzBYR9/night.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Rounded sliders */
+.slider-me.round {
+    border-radius: 30%;
+}
+
+.slider-me.round:before {
+    border-radius: 30%;
+}
+
+#toggler {
+    width: 50px;
+    height: 80px;
+}
+
+.hvr-overline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden
+}
+
+.hvr-overline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    top: 81%;
+    background: red;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out
+}
+
+.hvr-overline-from-center:active:before,
+.hvr-overline-from-center:focus:before,
+.hvr-overline-from-center:hover:before {
+    left: 0;
+    right: 0
+}
+
+#copycolor {
+    background-color: var(--copyright);
+    color: var(--textcopyright);
+}
+
+#loginbtn {
+    background-color: var(--loginbtncolor);
+}
+
+#signupbtn {
+    background-color: var(--loginbtncolor);
+}
+
+#sendsmsbtn {
+    background-color: var(--loginbtncolor);
+}
+
+#signupregistercolor {
+    color: var(--signupregistercolor);
+}
+
+
+/*
+        #topbtn{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }*/
